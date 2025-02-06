@@ -153,20 +153,12 @@ header {
     transform: scale(1.1);
 }
 		
-        .love-message {
-            text-align: center;
-            font-weight: bold;
-            font-size: 20px;
-            margin-top: 20px;
-        }
 
         .countup-timer {
             font-size: 1.5rem;
             margin-top: 20px;
 			color:White;
         }
-
-        
 		
 		
     /* Flip Cards Enhancements */
@@ -251,18 +243,73 @@ header {
     transform: rotateY(180deg);
 }
 
-    /* Envelope Styles */
-    .envelope-container {
-        position: relative;
-        width: 700px;
-        height: 480px;
-        margin: 50px auto;
-        cursor: pointer;
-		border-radius: 15px;
-		background-color: rgb(108,52,131);
-		backdrop-filter:blur(5px);		/* Midnight Purple  , 0.69*/
-		transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+/* Media Queries for Mobile View */
+    @media (max-width: 768px) {
+        .slider-container {
+            width: 90%;
+        }
+
+        .flip-card-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+        gap: 20px;
     }
+
+    .flip-card {
+        width: 250px;
+        height: 280px;
+    }
+
+    .title, .Names {
+        font-size: 1.5em; /* Reduce font size */
+    }
+
+    .Emojis {
+        font-size: 40px;
+    }
+	.wish{
+		font-size: 12px;
+	}
+}
+
+    @media (max-width: 480px) {
+    .flip-card-container {
+        grid-template-columns: 1fr; /* 1 card per row */
+        gap: 15px;
+    }
+
+    .flip-card {
+        width: 200px;
+        height: 240px;
+    }
+
+    .title, .Names {
+        font-size: 1.2em; /* Further reduce size for very small screens */
+        padding: 5px;
+    }
+
+    .Emojis {
+        font-size: 30px;
+    }
+	.wish{
+		font-size: 12px;
+	}
+}
+
+ /* Envelope Styles */
+    .envelope-container {
+    position: relative;
+    width: 90%; /* Use percentage instead of fixed px */
+    max-width: 700px; /* Limit max size for large screens */
+    height: auto;
+    aspect-ratio: 7 / 5; /* Maintain proportions */
+    margin: 50px auto;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: rgb(108,52,131);
+    backdrop-filter: blur(5px);
+    transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
 
     .envelope {
         width: 100%;
@@ -294,14 +341,23 @@ header {
 	}
 	
 	
-	.heart{
-		justify-content: center;
-        align-items: center;
-		font-size: 3rem;
-		Margin-left: 316.5px;
-		Margin-top: 165.5px;
-	}
-
+	.heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+	.love-message {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 20px;
+        }
     .letter {
         position: absolute;
         width: 90%;
@@ -326,53 +382,23 @@ header {
     .open .letter {
         transform: translateY(-40px);
     }
-
-    /* Media Queries for Mobile View */
-    @media (max-width: 768px) {
-        .slider-container {
-            width: 90%;
-        }
-
-        .flip-card-container {
-            grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
-            gap: 20px;
-        }
-
-        .flip-card {
-            width: 250px;
-            height: 280px;
-        }
-
-        .envelope-container {
-            width: 90%;
-            height: auto;
-        }
+	@media (max-width: 768px) {
+    .envelope-container {
+        width: 95%;
+        max-width: 320px; /* Smaller width for mobile */
     }
 
-    @media (max-width: 480px) {
-        header {
-            font-size: 1.8rem;
-        }
-
-        .slider-container {
-            width: 100%;
-        }
-
-        .flip-card-container {
-            grid-template-columns: 1fr; /* 1 card per row */
-            gap: 15px;
-        }
-
-        .flip-card {
-            width: 200px;
-            height: 240px;
-        }
-
-        .envelope-container {
-            width: 100%;
-            height: auto;
-        }
+    .letter {
+        font-size: 7.5px; /* Reduce font size for mobile */
+        padding: 10px;
     }
+	.love-message{
+		font-size:7.5px;
+	}
+    .heart {
+        font-size: 1.5rem;
+    }
+}
 /* Image Gallery */
 .Gallery {
     display: grid;
