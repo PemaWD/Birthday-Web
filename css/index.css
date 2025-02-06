@@ -169,6 +169,7 @@ a {
   transform: translateX(-50%);
 }
 
+
 .sparkle {
   fill: #AAAAAA;
   transition: all 800ms ease;
@@ -186,6 +187,7 @@ a {
     inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
     0px 0px 0px 4px rgba(255, 255, 255, 0.2),
     0px 0px 180px 0px #9917FF;
+
 }
 
 .btn:hover .text {
@@ -196,3 +198,4 @@ a {
   fill: white;
   transform: scale(1.2);
 }
+
