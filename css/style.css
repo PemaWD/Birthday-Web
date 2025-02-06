@@ -83,6 +83,7 @@ body {
 .star::before {
     content: "♥";
     font-size: 13px;
+    color: white;
     position: absolute;
     top: -4px;
     left: 0;
