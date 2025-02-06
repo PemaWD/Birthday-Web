@@ -260,14 +260,14 @@ header {
     }
 
     .title, .Names {
-        font-size: 1.5em; /* Reduce font size */
+        font-size: 1.3em; /* Reduce font size */
     }
 
     .Emojis {
         font-size: 40px;
     }
 	.wish{
-		font-size: 12px;
+		font-size: 9px;
 	}
 }
 
@@ -291,7 +291,7 @@ header {
         font-size: 30px;
     }
 	.wish{
-		font-size: 12px;
+		font-size: 8px;
 	}
 }
 
@@ -393,7 +393,7 @@ header {
         padding: 10px;
     }
 	.love-message{
-		font-size:7.5px;
+		font-size:7px;
 	}
     .heart {
         font-size: 1.5rem;
