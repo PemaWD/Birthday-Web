@@ -90,7 +90,7 @@ body {
 }
 
 .star::after {
-    content: "♥";
+    content: "🌸";
     font-size: 16px;
     position: absolute;
     margin: 30px;
