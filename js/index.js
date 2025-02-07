@@ -38,7 +38,7 @@ function createStars(numStars) {
 	/*Jigsaw JS*/
 	
 	
-	const imageSrc = 'images/13.jpg';
+	const imageSrc = 'images/35.jpg';
 			const gridSize = 5;
 			const tileSize = 100; // Adjust to match your CSS tile size
 			const container = document.getElementById('puzzle-container');
