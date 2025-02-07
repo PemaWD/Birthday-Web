@@ -105,8 +105,8 @@
 
 .puzzle-container {
             display: grid;
-            grid-template-columns: repeat(4, 100px);
-            grid-template-rows: repeat(4, 100px);
+            grid-template-columns: repeat(5, 100px);
+            grid-template-rows: repeat(5, 100px);
             gap: 2px;
             border: 2px solid #333;
             background: white;
@@ -118,7 +118,7 @@
         .puzzle-piece {
             width: 100px;
             height: 100px;
-            background-size: 400px 420px; /* Ensures full image is covered */
+            background-size: 500px 500px; /* Ensures full image is covered */
             cursor: grab;
             transition: all 0.2s ease-in-out;
         }
