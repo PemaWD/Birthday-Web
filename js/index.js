@@ -40,7 +40,6 @@ function createStars(numStars) {
 
 	const imageSrc = 'images/35.jpg';
 			const gridSize = 4;
-			const tileSize = 90; // Adjust to match your CSS tile size
 			const tileSize = 100; // Adjust to match your CSS tile size
 			const container = document.getElementById('puzzle-container');
 			const openBtn = document.getElementById('open-button');
