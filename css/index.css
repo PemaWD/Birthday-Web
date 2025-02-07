@@ -118,7 +118,7 @@
         .puzzle-piece {
             width: 100px;
             height: 100px;
-            background-size: 400px 450px; /* Ensures full image is covered */
+            background-size: 420px 450px; /* Ensures full image is covered */
             cursor: grab;
             transition: all 0.2s ease-in-out;
         }
