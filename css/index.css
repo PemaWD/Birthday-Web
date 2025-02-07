@@ -164,7 +164,7 @@ a {
   transition: all 450ms ease-in-out;
   visibility: hidden;
   position: absolute;
-  top: calc(50vh + 200px); /* Adjust this value based on puzzle size */
+  top: calc(50vh + 250px); /* Adjust this value based on puzzle size */
   left: 50%;
   transform: translateX(-50%);
 }
