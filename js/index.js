@@ -34,23 +34,24 @@ function createStars(numStars) {
 	document.body.style.overflow = "auto";
 	document.documentElement.style.overflow = "auto";
 	createStars(75); // Create 75 stars dynamically
-	
+
 	/*Jigsaw JS*/
-	
-	
+
+
 	const imageSrc = 'images/35.jpg';
-			const gridSize = 5;
+			const gridSize = 4;
+			const tileSize = 90; // Adjust to match your CSS tile size
 			const tileSize = 100; // Adjust to match your CSS tile size
 			const container = document.getElementById('puzzle-container');
 			const openBtn = document.getElementById('open-button');
-				
+
 			function createPuzzle() {
 				let indexes = [...Array(gridSize * gridSize).keys()].sort(() => Math.random() - 0.5);
-				
+
 				indexes.forEach((index, position) => {
 					let row = Math.floor(index / gridSize);
 					let col = index % gridSize;
-					
+
 					let piece = document.createElement('div');
 					piece.classList.add('puzzle-piece');
 					piece.style.backgroundImage = `url(${imageSrc})`;
@@ -132,4 +133,3 @@ function checkCompletion() {
         }, 200);
     }
 }
-
