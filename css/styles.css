@@ -124,14 +124,16 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-	color: white;
+    color: white;
 }
 
 /*Scrolling Effect */
 .slider {
     display: flex;
+    justify-content: center;
     align-items: center;
-    transition: transform 1s ease-in-out;
+    gap: 15px;
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1); /* Smoother transition */
 }
 
 /* Images with scaling effect */
@@ -141,7 +143,7 @@ header {
 	
     object-fit: cover;
     border-radius: 15px;
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.6s ease-in-out;
     opacity: 0.5;
 
 }
@@ -410,21 +412,17 @@ header {
     color: white;
 }
 
-
     /* Ensure images fit well */
 .Gallery img {
-    width: 70%; /* Take full width of grid cell */
+    width: 90%; /* Take full width of grid cell */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Crop images if needed */
     border-radius: 10px;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-
-
-
 .Gallery img:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
     opacity: 1;
 }
 /* Responsive Adjustments */
